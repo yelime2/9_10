@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<style>
+body{font-size: 20px; font-family: "Inconsolata", monospace; text-align: center;}
+</style>
+</head>
+<body>
+
+<h1>
+Pasta Recipe
+</h1>
+<img src="01.gif" width="300">
+<p></p> <!-- 레시피가 들어갈 자리 -->
+
+
+<script>
+function sum(num){
+  pasta = 0;
+  oil = 0;
+  salt = 0;
+  sauce = 0;
+
+  for(let i=1; i<=num; i++){
+    pasta = pasta + 100;
+    oil   = oil + 10;
+    salt  = salt + 5;
+    sauce = sauce + 150;
+  }
+
+  document.body.innerHTML += 
+    "Number of servings: " + num + "<br>" +
+    "Pasta: " + pasta + " g<br>" +
+    "Olive oil: " + oil + " ml<br>" +
+    "Salt: " + salt + " g<br>" +
+    "Sauce: " + sauce + " g<br>";
+
+}
+
+a = prompt("몇 인분의 파스타를 만드시겠습니까?🍝");
+sum(a);
+</script>
+</body>
+</html>
